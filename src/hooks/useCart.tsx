@@ -59,7 +59,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         }))
       }
       else {
-        const product = await api.get<Product>(`/product/${productId}`)
+        const product = await api.get<Product>(`/products/${productId}`)
 
         const newProduct = {
           ...product.data,
